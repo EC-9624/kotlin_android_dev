@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:952361057438:android:90bfcbdc13cf28b28f8f8f",
         "android_client_info": {
-          "package_name": "com.example.firebasememo"
+          "package_name": "com.example.try_firestore"
         }
       },
       "oauth_client": [
