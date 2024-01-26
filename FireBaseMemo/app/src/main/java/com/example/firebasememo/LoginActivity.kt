@@ -26,8 +26,9 @@ class LoginActivity : AppCompatActivity() {
         binding.authButton.setOnClickListener {
             // 認証プロバイダー設定
             val providers = arrayListOf(
-                AuthUI.IdpConfig.EmailBuilder().build() ,
                 AuthUI.IdpConfig.GoogleBuilder().build(),
+                AuthUI.IdpConfig.EmailBuilder().build() ,
+
             )
 
             // サインインインテントをランチャーにセットして FirebaseUI を起動
@@ -58,6 +59,7 @@ class LoginActivity : AppCompatActivity() {
                 nextIntent.putExtra("email", it.email)
                 startActivity(nextIntent)
             }
+
         } else {
             // サインインに失敗しました。応答が null の場合、
             // ユーザーは [戻る] ボタンを使用してサインイン フローをキャンセルしました。
